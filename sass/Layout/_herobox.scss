@@ -5,13 +5,15 @@
 }
 
 .herobox {
-  min-height: 100vh;
+  // min-height: 100%;
   margin-bottom: 10em;
   position: relative;
   &__image {
+    padding-top: 49%;
     min-height: 92vh;
     background-image: url(https://static.nike.com/a/images/f_auto/dpr_1.5/w_1151,c_limit/74d8d78b-7f24-4bd4-9d79-c6e4024cc6f0/nike-just-do-it.jpg);
     background-size: cover;
+    background-position: center;
   }
 
   &__info {
@@ -34,5 +36,43 @@
       text-align: center;
       margin-top: 10px;
     }
+  }
+}
+
+//////////////////////////////////////
+// MEDIA QUERY
+
+@media (max-width: 1120px) {
+  .herobox__info__heading {
+    font-size: 70px;
+    line-height: 58px;
+  }
+}
+
+@media (max-width: 1083px) {
+  .herobox__info__heading {
+    font-size: 66px;
+    line-height: 56px;
+  }
+}
+
+@media (max-width: 1021px) {
+  .herobox__info__heading {
+    font-size: 61px;
+    line-height: 51px;
+  }
+}
+
+@media (max-width: 1003px) {
+  .herobox__info__heading {
+    font-size: 61px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 970px) {
+  .herobox__info__heading {
+    font-size: 65px;
+    line-height: 55px;
   }
 }
