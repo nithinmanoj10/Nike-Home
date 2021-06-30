@@ -2,6 +2,7 @@ console.log("Hello");
 
 const menuSub = document.querySelectorAll(".menu-sub");
 const menuLinks = document.querySelectorAll(".menu-main__item__link");
+const container = document.querySelector(".container");
 
 // console.log(menuSub);
 // console.log(menuLinks);
@@ -42,9 +43,11 @@ const nav = document.querySelector(".nav");
 nav.addEventListener("mouseenter", function () {
   swiper.style.zIndex = -1;
   swiper.style.transition = "all 0.1s";
+  container.style.opacity = "0";
 });
 
 nav.addEventListener("mouseleave", function () {
   swiper.style.transition = "all 1s";
   swiper.style.zIndex = 12;
+  container.style.opacity = "1";
 });
