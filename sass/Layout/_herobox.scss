@@ -6,7 +6,8 @@
 
 .herobox {
   min-height: 100vh;
-  //   background-color: antiquewhite;
+  margin-bottom: 10em;
+  position: relative;
   &__image {
     min-height: 92vh;
     background-image: url(https://static.nike.com/a/images/f_auto/dpr_1.5/w_1151,c_limit/74d8d78b-7f24-4bd4-9d79-c6e4024cc6f0/nike-just-do-it.jpg);
@@ -27,6 +28,11 @@
       text-align: center;
       width: 70%;
       margin: 0px auto;
+    }
+
+    &__subheading {
+      text-align: center;
+      margin-top: 10px;
     }
   }
 }
