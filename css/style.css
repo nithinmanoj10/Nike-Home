@@ -1,0 +1,177 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+header {
+  position: relative;
+  background-color: white;
+}
+
+header .container-nav {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header .container-nav .logo {
+  width: 65px;
+  margin: 16px 0;
+  display: block;
+  float: left;
+}
+
+header .container-nav .logo-nike {
+  width: 100%;
+}
+
+header .container-nav .nav {
+  float: left;
+  margin-left: 300px;
+  padding-bottom: 21px;
+  height: 20%;
+}
+
+header .container-nav .nav .menu-main__item {
+  display: inline-block;
+  padding: 0 0;
+  margin-top: 22px;
+}
+
+header .container-nav .nav .menu-main__item__link {
+  padding: 19px 12px;
+  color: #111;
+  text-decoration: none;
+}
+
+header .container-nav .nav .menu-main__item__link:hover + .menu-sub {
+  opacity: 1;
+  z-index: 11;
+  transform: translateY(0);
+}
+
+header .container-nav .nav .menu-main__item .menu-sub {
+  position: fixed;
+  opacity: 0;
+  z-index: 9;
+  top: 4.65em;
+  left: 0;
+  transform: translateY(-15px);
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  padding-top: 0px;
+  max-height: 89vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header .container-nav .nav .menu-main__item .menu-sub:hover {
+  z-index: 11;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+header .container-nav .nav .menu-main__item .menu-sub__section {
+  width: 14%;
+  margin: 10px;
+}
+
+header .container-nav .nav .menu-main__item .menu-sub__section__divison {
+  margin-bottom: 44px;
+}
+
+header .container-nav .nav .menu-main__item .menu-sub__section__divison__heading {
+  text-decoration: none;
+  color: #111;
+}
+
+header .container-nav .nav .menu-main__item .menu-sub__section__divison h3 {
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+header .container-nav .nav .menu-main__item .menu-sub__list {
+  list-style: none;
+}
+
+header .container-nav .nav .menu-main__item .menu-sub__list__item {
+  margin: 6px 0;
+}
+
+header .container-nav .nav .menu-main__item .menu-sub__list__item__link {
+  text-decoration: none;
+  color: #6d6d6d;
+  font-size: 14px;
+}
+
+header .container-nav .nav .menu-main__item .menu-sub__list__item__link:hover {
+  color: #000;
+}
+
+header .container-nav .nav:hover ~ .mega-menu-bg {
+  height: 89vh;
+}
+
+header .container-nav .mega-menu-bg {
+  background-color: #fff;
+  height: 0;
+  width: 100%;
+  transition: all 0.4s;
+}
+
+header .container-nav .mega-menu-bg:hover {
+  height: 89vh;
+}
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.menu-sub__mask {
+  position: fixed;
+  top: 4.65em;
+  left: 0;
+  transform: translateY(-15px);
+  z-index: 10;
+  min-height: 91vh;
+  color: transparent;
+  width: 100%;
+  top: 80.4px;
+  padding-top: 0px;
+  margin-top: -6px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.active {
+  border-bottom: 2px solid black;
+}
+
+@media (max-width: 910px) {
+  header .container-nav .nav {
+    margin-left: 200px;
+  }
+}
+
+@media (max-width: 795px) {
+  header .container-nav .nav {
+    margin-left: 110px;
+  }
+  header .container-nav .nav .menu-main__item .menu-sub__section {
+    width: 16%;
+    margin: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

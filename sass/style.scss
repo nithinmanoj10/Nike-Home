@@ -1,0 +1,254 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #fff;
+}
+
+header {
+  position: relative;
+  background-color: white;
+
+  .container-nav {
+    width: 90%;
+    margin: 0 auto;
+
+    .logo {
+      width: 65px;
+      margin: 16px 0;
+      display: block;
+      float: left;
+
+      &-nike {
+        width: 100%;
+      }
+    }
+
+    .nav {
+      float: left;
+      margin-left: 300px;
+      padding-bottom: 21px;
+      height: 20%;
+
+      .menu-main {
+        &__item {
+          display: inline-block;
+          padding: 0 0;
+          margin-top: 22px;
+
+          &__link {
+            padding: 19px 12px;
+            color: #111;
+            text-decoration: none;
+
+            &:hover + .menu-sub {
+              opacity: 1;
+              z-index: 11;
+              transform: translateY(0);
+            }
+          }
+
+          .menu-sub {
+            position: fixed;
+            opacity: 0;
+
+            z-index: -1;
+            top: 4.65em;
+            left: 0;
+            transform: translateY(-15px);
+            transition: all 0.3s ease-in-out;
+
+            width: 100%;
+            padding-top: 0px;
+            max-height: 89vh;
+            overflow-y: auto;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            &:hover {
+              z-index: 11;
+              opacity: 1;
+              transform: translateY(0);
+            }
+
+            &__section {
+              width: 14%;
+              margin: 10px;
+
+              &__divison {
+                margin-bottom: 44px;
+                &__heading {
+                  text-decoration: none;
+                  color: #111;
+                }
+                h3 {
+                  font-weight: 300;
+                  font-size: 16px;
+                  margin-bottom: 16px;
+                }
+              }
+            }
+
+            &__list {
+              list-style: none;
+
+              &__item {
+                margin: 6px 0;
+                &__link {
+                  text-decoration: none;
+                  color: #6d6d6d;
+                  font-size: 14px;
+
+                  &:hover {
+                    color: #000;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &:hover ~ .mega-menu-bg {
+        height: 89vh;
+      }
+    }
+
+    .mega-menu-bg {
+      background-color: #fff;
+      height: 0;
+      width: 100%;
+      transition: all 0.2s;
+
+      &:hover {
+        height: 89vh;
+      }
+    }
+  }
+}
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.menu-sub__mask {
+  position: fixed;
+  top: 4.65em;
+  left: 0;
+  transform: translateY(-15px);
+  z-index: 10;
+  min-height: 91vh;
+  color: transparent;
+  // background-color: aqua;
+  width: 100%;
+  top: 80.4px;
+  padding-top: 0px;
+  margin-top: -6px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.active {
+  border-bottom: 2px solid black;
+}
+
+.swiper {
+  width: 200%;
+  display: flex;
+  position: absolute;
+  top: 63px;
+  left: 0;
+  z-index: 15;
+  .swiper-info {
+    background-color: #f5f5f5;
+    transform: translateX(0);
+    // transition: all 0.2s;
+
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px 0;
+
+    .heading {
+      font-size: 14px;
+      font-weight: 300;
+      text-transform: uppercase;
+      padding: 3px;
+    }
+
+    .sub-heading {
+      font-size: 12px;
+      padding: 3px;
+      .link {
+        color: black;
+        &--black {
+          color: black;
+        }
+      }
+    }
+  }
+
+  animation: swiper 15s linear infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes swiper {
+  0% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  90% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+///////////////////////////////////////////////
+// MEDIA QUERIES
+
+@media (max-width: 910px) {
+  header {
+    .container-nav {
+      .nav {
+        margin-left: 200px;
+      }
+    }
+  }
+}
+
+@media (max-width: 795px) {
+  header {
+    .container-nav {
+      .nav {
+        margin-left: 110px;
+      }
+    }
+  }
+
+  header .container-nav .nav .menu-main__item .menu-sub__section {
+    width: 16%;
+    margin: 10px;
+  }
+}
