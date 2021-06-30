@@ -44,10 +44,12 @@ nav.addEventListener("mouseenter", function () {
   swiper.style.zIndex = -1;
   swiper.style.transition = "all 0.1s";
   container.style.opacity = "0";
+  container.style.zIndex = "8";
 });
 
 nav.addEventListener("mouseleave", function () {
   swiper.style.transition = "all 1s";
   swiper.style.zIndex = 12;
   container.style.opacity = "1";
+  container.style.zIndex = "15";
 });
