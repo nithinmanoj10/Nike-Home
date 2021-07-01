@@ -45,3 +45,31 @@
     }
   }
 }
+
+//////////////////////////////////
+// MEDIA QUERIES
+
+@media (max-width: 780px) {
+  .featured__gallery {
+    display: flex;
+    flex-direction: column;
+
+    &__image {
+      height: 90vh;
+      width: 100%;
+      margin-bottom: 10px;
+
+      &__desc {
+        position: absolute;
+        bottom: 20%;
+        left: 7%;
+      }
+
+      &__button {
+        position: absolute;
+        top: 80%;
+        left: 7%;
+      }
+    }
+  }
+}

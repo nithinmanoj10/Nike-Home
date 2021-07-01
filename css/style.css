@@ -164,6 +164,28 @@
   left: 7%;
 }
 
+@media (max-width: 780px) {
+  .featured__gallery {
+    display: flex;
+    flex-direction: column;
+  }
+  .featured__gallery__image {
+    height: 90vh;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .featured__gallery__image__desc {
+    position: absolute;
+    bottom: 20%;
+    left: 7%;
+  }
+  .featured__gallery__image__button {
+    position: absolute;
+    top: 80%;
+    left: 7%;
+  }
+}
+
 *,
 *::before,
 *::after {
