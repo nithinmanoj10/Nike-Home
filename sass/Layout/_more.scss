@@ -1,0 +1,50 @@
+.more-nike {
+  margin-bottom: 50px;
+  .more {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
+
+    &__col {
+      height: 75vh;
+      width: 32.5%;
+      position: relative;
+
+      &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      &__button {
+        transform: translate(0, 0);
+        position: absolute;
+        bottom: 5%;
+        left: 7%;
+      }
+    }
+  }
+}
+
+@media (max-width: 577px) {
+  .more-nike {
+    .more {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &__col {
+        height: 90vh;
+        width: 100%;
+        margin-bottom: 20px;
+
+        &__image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
