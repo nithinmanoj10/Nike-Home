@@ -53,3 +53,22 @@ nav.addEventListener("mouseleave", function () {
   container.style.opacity = "1";
   container.style.zIndex = "15";
 });
+
+
+//////////////////////////////////
+// MINI MENU
+
+const miniMenu = document.querySelector(".mini-menu");
+const hiddenItems = document.querySelectorAll(".mini-menu__list__item--hidden");
+
+miniMenu.addEventListener('mouseenter',function(){
+  hiddenItems.forEach(function(item){
+    item.style.opacity = "1";
+  })
+})
+
+miniMenu.addEventListener('mouseleave',function(){
+  hiddenItems.forEach(function(item){
+    item.style.opacity = "0";
+  })
+})

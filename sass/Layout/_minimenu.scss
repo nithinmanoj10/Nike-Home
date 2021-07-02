@@ -1,0 +1,47 @@
+.mini-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 150px;
+  height: 180px;
+  transition: all 0.2s;
+
+  overflow-y: hidden;
+
+  &:hover {
+    height: 360px;
+  }
+
+  h3 {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 25px;
+  }
+
+  &__list {
+    list-style: none;
+    width: 25%;
+
+    &__item {
+      margin-bottom: 18px;
+
+      &__link {
+        text-decoration: none;
+        color: #898989;
+
+        &:hover {
+          color: #000;
+        }
+      }
+
+      &--hidden {
+        transition: all 0.8s;
+        opacity: 0;
+      }
+    }
+  }
+}
