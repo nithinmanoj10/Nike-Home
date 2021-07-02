@@ -458,7 +458,6 @@
 .footer {
   background-color: #111111;
   color: #fff;
-  margin-bottom: 60px;
 }
 
 .footer__top {
@@ -479,7 +478,7 @@
   font-weight: 300;
   font-size: 14px;
   text-decoration: none;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .footer__list__item {
@@ -498,7 +497,7 @@
 
 .footer__social {
   float: right;
-  margin-top: 50px;
+  margin-top: 35px;
   margin-right: 20px;
 }
 
@@ -528,6 +527,113 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.footer .location {
+  float: left;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.footer .location__pin {
+  width: 15px;
+  height: 15px;
+  fill: #fff;
+  margin-right: 10px;
+}
+
+.footer .location__pin__link {
+  text-decoration: none;
+}
+
+.footer .location__name {
+  font-size: 10px;
+  color: #fff;
+}
+
+.footer .location__name__link {
+  text-decoration: none;
+}
+
+.footer .copyright {
+  float: left;
+}
+
+.footer .copyright__text {
+  font-size: 10px;
+  color: #676767;
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer__nav__list {
+  list-style-type: none;
+}
+
+.footer__nav__list__item {
+  padding: 8px 0;
+  float: left;
+  margin-left: 30px;
+}
+
+.footer__nav__list__item--tab {
+  position: relative;
+}
+
+.footer__nav__list__item--tab:hover > .guide {
+  opacity: 1;
+  z-index: 2;
+}
+
+.footer__nav__list__item__link {
+  text-decoration: none;
+  font-size: 10px;
+  color: #676767;
+}
+
+.footer__nav__list__item__link:hover {
+  color: #fff;
+}
+
+.footer .guide {
+  position: absolute;
+  top: -140px;
+  left: -180px;
+  z-index: -1;
+  background-color: #111111;
+  opacity: 0;
+  transition: all 0.2s;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid #fff;
+  padding: 15px 25px;
+  min-width: 500px;
+}
+
+.footer .guide__list {
+  list-style: none;
+  width: 30%;
+}
+
+.footer .guide__list__item {
+  margin: 2.5px 0;
+}
+
+.footer .guide__list__item__link {
+  text-decoration: none;
+  font-size: 12px;
+  color: #676767;
+}
+
+.footer .guide__list__item__link:hover {
+  color: #fff;
 }
 
 *,
