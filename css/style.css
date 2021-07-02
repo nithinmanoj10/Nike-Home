@@ -464,6 +464,21 @@
   border-bottom: 1px solid #333333;
 }
 
+.footer__bottom {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__bottom__left {
+  float: left;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .footer__list {
   float: left;
   list-style: none;
