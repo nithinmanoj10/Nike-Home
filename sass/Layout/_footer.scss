@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "Nike TG";
+  src: url(https://www.nike.com/static/ncss/3.2/dotcom/fonts/257c802f-349c-4b4d-aefa-546d5de15ec6.woff2)
+    format("truetype");
+}
+
+.footer {
+  background-color: #111111;
+  color: #fff;
+
+  margin-bottom: 60px;
+
+  &__top {
+    border-bottom: 1px solid rgb(51, 51, 51);
+  }
+
+  &__bottom {
+    // border: 1px dashed blue;
+  }
+
+  &__list {
+    // border: 1px dashed #fff;
+    float: left;
+    list-style: none;
+    width: 20%;
+
+    padding: 35px 0px 10px 10px;
+
+    &__header {
+      font-family: "Nike TG";
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: 300;
+      font-size: 14px;
+      text-decoration: none;
+
+      margin-bottom: 10px;
+    }
+
+    &__item {
+      margin-bottom: 8px;
+      &__link {
+        color: #676767;
+        text-decoration: none;
+        font-size: 12px;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  &__social {
+    float: right;
+    margin-top: 50px;
+    margin-right: 20px;
+
+    &__link {
+      border-radius: 50%;
+      padding: 16px;
+      float: left;
+      text-decoration: none;
+      text-align: center;
+      width: 15px;
+      height: 15px;
+      margin-left: 10px;
+      background-color: #7e7e7e;
+      transition: all 0.2s;
+
+      position: relative;
+
+      &:hover {
+        background-color: #fff;
+      }
+    }
+
+    &__icon {
+      fill: #111111;
+      width: 15px;
+      height: 15px;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+    }
+  }
+}

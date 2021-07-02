@@ -72,3 +72,4 @@ miniMenu.addEventListener('mouseleave',function(){
     item.style.opacity = "0";
   })
 })
+
