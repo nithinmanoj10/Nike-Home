@@ -606,6 +606,11 @@
   z-index: 2;
 }
 
+.footer__nav__list__item--tab:hover {
+  border-top: 2px solid #fff;
+  margin-top: -2px;
+}
+
 .footer__nav__list__item__link {
   text-decoration: none;
   font-size: 10px;
@@ -618,7 +623,7 @@
 
 .footer .guide {
   position: absolute;
-  top: -140px;
+  top: -141.5px;
   left: -180px;
   z-index: -1;
   background-color: #111111;
