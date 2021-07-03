@@ -739,6 +739,10 @@
   position: relative;
 }
 
+.arrow__link:active {
+  background-color: rgba(241, 241, 241, 0.921);
+}
+
 .arrow__icon {
   fill: #111111;
   width: 15px;
@@ -757,6 +761,11 @@
 .arrow--right {
   top: 40%;
   right: 1%;
+}
+
+.search__icon {
+  width: 20px;
+  height: 20px;
 }
 
 *,

@@ -89,9 +89,4 @@ carouselLeftArrow.addEventListener("click",function(){
   carousel.scrollLeft -= (cardWidth + 20);
 })
 
-// console.log(carouselLeftArrow);
-// console.log(carouselRightArrow);
-// console.log(carouselProducts);
-// console.log(carousel);
 
-console.log(carouselProductsCard.getBoundingClientRect().width);
