@@ -80,9 +80,13 @@ const carouselProductsCard = document.querySelector(".products__card");
 const carousel = document.querySelector(".carousel");
 
 carouselRightArrow.addEventListener("click",function(){
-  // carouselProducts.style.transform = "translateX(-400px)";
   const cardWidth = carouselProductsCard.getBoundingClientRect().width;
   carousel.scrollLeft += (cardWidth + 20);
+})
+
+carouselLeftArrow.addEventListener("click",function(){
+  const cardWidth = carouselProductsCard.getBoundingClientRect().width;
+  carousel.scrollLeft -= (cardWidth + 20);
 })
 
 // console.log(carouselLeftArrow);

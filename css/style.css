@@ -662,6 +662,7 @@
 
 .product-carousel .carousel {
   margin-top: 30px;
+  margin-bottom: 30px;
   overflow-x: scroll;
   scroll-behavior: smooth;
   transition: all 0.1s;
@@ -675,13 +676,14 @@
 }
 
 .product-carousel .products__card {
-  height: 70vh;
+  height: 60vh;
   width: 70vh;
   margin-right: 20px;
+  text-decoration: none;
 }
 
 .product-carousel .products__card__image {
-  height: 70%;
+  height: 82%;
   width: 100%;
 }
 
@@ -693,6 +695,7 @@
 
 .product-carousel .products__card__info {
   margin-top: 15px;
+  color: #000;
 }
 
 .product-carousel .products__card__info__name {
@@ -744,12 +747,12 @@
 }
 
 .arrow--left {
-  top: 33%;
+  top: 40%;
   left: 1%;
 }
 
 .arrow--right {
-  top: 33%;
+  top: 40%;
   right: 1%;
 }
 
