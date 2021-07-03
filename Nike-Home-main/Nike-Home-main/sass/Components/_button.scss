@@ -1,0 +1,32 @@
+.button {
+  padding: 12px 28px;
+  text-decoration: none;
+  border-radius: 100px;
+  transition: all 0.2s;
+  margin-top: 25px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  &--black {
+    background-color: #000;
+    color: #fff;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  }
+
+  &--white {
+    background-color: #fff;
+    color: #000;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+  }
+
+  &:visited {
+    text-decoration: none;
+  }
+}

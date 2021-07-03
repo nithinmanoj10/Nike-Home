@@ -1,0 +1,47 @@
+.arrow {
+  position: absolute;
+
+  &__link {
+    border-radius: 50%;
+    padding: 16px;
+    float: left;
+    text-decoration: none;
+    text-align: center;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    transition: all 0.2s;
+    background-color: rgba(211, 211, 211, 0.521);
+
+    position: relative;
+
+    &:active {
+      background-color: rgba(241, 241, 241, 0.921);
+    }
+  }
+
+  &__icon {
+    fill: #111111;
+    width: 15px;
+    height: 15px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+  }
+
+  width: 40px;
+  height: 40px;
+
+  &--left {
+    top: 40%;
+    left: 1%;
+  }
+
+  &--right {
+    top: 40%;
+    right: 1%;
+  }
+}

@@ -1,0 +1,130 @@
+// .nav__search-bar {
+//   float: right;
+//   position: relative;
+
+//   margin-top: 14px;
+//   .search-bar {
+//     background-color: #f1f1f1;
+//     padding: 10px 40px 10px 40px;
+//     border: none;
+//     border-radius: 100px;
+//     outline: none;
+//     &::placeholder {
+//       color: #a3a3a3;
+//       font-size: 15px;
+//     }
+
+//     &:hover {
+//       background-color: #e6e6e6;
+
+//       &::placeholder {
+//         color: #333333;
+//       }
+//     }
+
+//     &:focus {
+//       background-color: #e6e6e6;
+
+//       width: 100%;
+
+//       &::placeholder {
+//         color: #333333;
+//       }
+//     }
+//   }
+
+//   .search-icon__link {
+//     // background-color: aqua;
+//     border-radius: 50%;
+//     padding: 16px;
+//     float: left;
+//     text-decoration: none;
+//     text-align: center;
+//     width: 15px;
+//     height: 15px;
+//     margin-left: 10px;
+//     transition: all 0.2s;
+
+//     position: relative;
+//     top: 2px;
+//     left: 13%;
+
+//     &:hover {
+//       background-color: #e6e6e6;
+//     }
+
+//     .search-icon {
+//       position: absolute;
+//       top: 50%;
+//       left: 50%;
+
+//       transform: translate(-50%, -50%);
+
+//       display: inline-block;
+//       width: 1em;
+//       height: 1em;
+//       stroke-width: 0;
+//     }
+//   }
+// }
+
+.search {
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  position: absolute;
+  z-index: 200;
+  transition: all 0.3s;
+
+  top: 0;
+  right: 5%;
+
+  margin: 14px 5px 0 0;
+
+  &__input {
+    background-color: #f1f1f1;
+    padding: 10px 30px 10px 15px;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+    width: 60%;
+    margin-right: -30px;
+    transition: all 0.2s;
+
+    &::placeholder {
+      color: #a3a3a3;
+      font-size: 15px;
+    }
+
+    &:focus {
+      background-color: #eeeeee;
+      width: 100%;
+      // transform: trax;
+
+      &::placeholder {
+        color: #5c5c5c;
+      }
+    }
+
+    &:focus ~ .search__button {
+      background-color: #eeeeee;
+    }
+  }
+
+  &__button {
+    border: none;
+    // background-color: #f1f1f1;
+    transition: all 0.2s;
+
+    &:active {
+      transform: translateY(3px);
+    }
+  }
+
+  &__icon {
+    width: 15px;
+    height: 15px;
+  }
+}

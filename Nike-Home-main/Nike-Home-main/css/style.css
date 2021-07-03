@@ -1,0 +1,1081 @@
+.container {
+  top: 61px;
+  left: 5%;
+  width: 90%;
+  opacity: 1;
+  z-index: 15;
+  margin: 0 auto;
+  margin-top: 54px;
+  transition: all 0.2s;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "Nike Futura";
+  src: url(https://www.nike.com/static/ncss/3.2/dotcom/fonts/nike-futura-extra-bold-v200.woff2) format("truetype");
+}
+
+.herobox {
+  margin-bottom: 10em;
+  position: relative;
+}
+
+.herobox__image {
+  padding-top: 49%;
+  min-height: 92vh;
+  background-image: url(https://static.nike.com/a/images/f_auto/dpr_1.5/w_1151,c_limit/74d8d78b-7f24-4bd4-9d79-c6e4024cc6f0/nike-just-do-it.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.herobox__info {
+  margin-top: 36px;
+}
+
+.herobox__info__heading {
+  font-family: "Nike Futura";
+  text-transform: uppercase;
+  font-size: 72px;
+  font-weight: 300;
+  line-height: 60px;
+  letter-spacing: 0.5px;
+  color: #111111;
+  text-align: center;
+  width: 70%;
+  margin: 0px auto;
+}
+
+.herobox__info__subheading {
+  text-align: center;
+  margin-top: 10px;
+}
+
+@media (max-width: 1120px) {
+  .herobox__info__heading {
+    font-size: 70px;
+    line-height: 58px;
+  }
+}
+
+@media (max-width: 1083px) {
+  .herobox__info__heading {
+    font-size: 66px;
+    line-height: 56px;
+  }
+}
+
+@media (max-width: 1021px) {
+  .herobox__info__heading {
+    font-size: 61px;
+    line-height: 51px;
+  }
+}
+
+@media (max-width: 1003px) {
+  .herobox__info__heading {
+    font-size: 61px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 970px) {
+  .herobox__info__heading {
+    font-size: 65px;
+    line-height: 55px;
+  }
+}
+
+.button {
+  padding: 12px 28px;
+  text-decoration: none;
+  border-radius: 100px;
+  transition: all 0.2s;
+  margin-top: 25px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.button--black {
+  background-color: #000;
+  color: #fff;
+}
+
+.button--black:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.button--white {
+  background-color: #fff;
+  color: #000;
+}
+
+.button--white:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.button:visited {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Nike Futura";
+  src: url(https://www.nike.com/static/ncss/3.2/dotcom/fonts/nike-futura-extra-bold-v200.woff2) format("truetype");
+}
+
+.featured {
+  min-height: 120vh;
+  margin-bottom: 5em;
+}
+
+.featured__heading {
+  font-weight: 300;
+}
+
+.featured__gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.featured__gallery--double--joined .featured__gallery__image {
+  width: 50%;
+}
+
+.featured__gallery--double--not-joined .featured__gallery__image {
+  width: 49.5%;
+}
+
+.featured__gallery--double .featured__gallery__image__heading {
+  position: absolute;
+  top: 60%;
+  left: 7%;
+}
+
+.featured__gallery--double .featured__gallery__image__desc {
+  position: absolute;
+  bottom: 15%;
+  left: 7%;
+}
+
+.featured__gallery--double .featured__gallery__image__button {
+  position: absolute;
+  top: 86%;
+  left: 7%;
+}
+
+.featured__gallery--single .featured__gallery__image {
+  width: 100%;
+}
+
+.featured__gallery--single .featured__gallery__image__heading {
+  position: absolute;
+  top: 60%;
+  left: 3.465%;
+}
+
+.featured__gallery--single .featured__gallery__image__desc {
+  position: absolute;
+  bottom: 15%;
+  left: 3.465%;
+  width: 40%;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.featured__gallery--single .featured__gallery__image__button {
+  position: absolute;
+  top: 86%;
+  left: 3.465%;
+}
+
+.featured__gallery__link {
+  display: block;
+  width: 49.5%;
+}
+
+.featured__gallery__image {
+  height: 110vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.featured__gallery__image__heading {
+  font-family: "Nike Futura";
+  text-transform: uppercase;
+  font-size: 72px;
+  font-weight: 300;
+  color: #fff;
+  width: 40%;
+  line-height: 59px;
+}
+
+.featured__gallery__image__desc {
+  font-size: 20px;
+  font-weight: 300;
+  color: #fff;
+  width: 75%;
+}
+
+.featured__gallery__image__button {
+  transform: translate(0, 0);
+}
+
+@media (max-width: 780px) {
+  .featured__gallery {
+    display: flex;
+    flex-direction: column;
+  }
+  .featured__gallery--double .featured__gallery__image {
+    width: 100%;
+    height: 90vh;
+    margin-bottom: 10px;
+  }
+  .featured__gallery--double .featured__gallery__image__desc {
+    position: absolute;
+    bottom: 20%;
+    left: 7%;
+  }
+  .featured__gallery--double .featured__gallery__image__button {
+    position: absolute;
+    top: 80%;
+    left: 7%;
+  }
+}
+
+@media (max-width: 915px) {
+  .featured__gallery--single .featured__gallery__image__desc {
+    font-size: 15px;
+    position: absolute;
+    bottom: 14%;
+  }
+}
+
+@media (max-width: 860px) {
+  .featured__gallery--single .featured__gallery__image__desc {
+    font-size: 15px;
+    position: absolute;
+    bottom: 12%;
+  }
+}
+
+@media (max-width: 800px) {
+  .featured__gallery--single .featured__gallery__image__desc {
+    font-size: 14px;
+    position: absolute;
+    bottom: 12%;
+  }
+}
+
+@media (max-width: 590px) {
+  .featured__gallery--single .featured__gallery__image__heading {
+    position: absolute;
+    top: 57%;
+  }
+  .featured__gallery--single .featured__gallery__image__desc {
+    font-size: 15px;
+    position: absolute;
+    bottom: 12%;
+  }
+}
+
+@media (max-width: 820px) {
+  .featured__gallery {
+    display: flex;
+    flex-direction: row;
+    width: 200%;
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 780px) {
+  .featured__gallery--double--joined .featured__gallery__image__heading {
+    position: absolute;
+    top: 50%;
+  }
+}
+
+.more-nike {
+  margin-bottom: 50px;
+}
+
+.more-nike .more {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.more-nike .more__col {
+  height: 75vh;
+  width: 32.5%;
+  position: relative;
+}
+
+.more-nike .more__col__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.more-nike .more__col__button {
+  transform: translate(0, 0);
+  position: absolute;
+  bottom: 5%;
+  left: 7%;
+}
+
+@media (max-width: 577px) {
+  .more-nike .more {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .more-nike .more__col {
+    height: 90vh;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .more-nike .more__col__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.mini-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 0px;
+  height: 180px;
+  transition: all 0.2s;
+  overflow-y: hidden;
+}
+
+.mini-menu:hover {
+  height: 360px;
+}
+
+.mini-menu h3 {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+
+.mini-menu__list {
+  list-style: none;
+  width: 25%;
+  margin: 0 3px;
+}
+
+.mini-menu__list__item {
+  margin-bottom: 18px;
+}
+
+.mini-menu__list__item__link {
+  text-decoration: none;
+  color: #898989;
+}
+
+.mini-menu__list__item__link:hover {
+  color: #000;
+}
+
+.mini-menu__list__item--hidden {
+  transition: all 0.8s;
+  opacity: 0;
+}
+
+@media (max-width: 980px) {
+  .mini-menu__list__item__link {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 950px) {
+  .mini-menu {
+    width: 80%;
+  }
+  .mini-menu__list__item__link {
+    font-size: 14px;
+  }
+  .mini-menu__list__item {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 900px) {
+  .mini-menu {
+    width: 85%;
+  }
+}
+
+@media (max-width: 830px) {
+  .mini-menu {
+    width: 95%;
+  }
+  .mini-menu__list {
+    width: 23%;
+  }
+}
+
+@media (max-width: 730px) {
+  .mini-menu {
+    width: 100%;
+  }
+  .mini-menu:hover {
+    height: 370px;
+  }
+  .mini-menu__list {
+    width: 21%;
+  }
+}
+
+@media (max-width: 575px) {
+  .mini-menu {
+    width: 100%;
+    height: 220px;
+  }
+  .mini-menu:hover {
+    height: 400px;
+  }
+  .mini-menu__list__item {
+    font-size: 13px;
+  }
+}
+
+@font-face {
+  font-family: "Nike TG";
+  src: url(https://www.nike.com/static/ncss/3.2/dotcom/fonts/257c802f-349c-4b4d-aefa-546d5de15ec6.woff2) format("truetype");
+}
+
+.footer {
+  background-color: #111111;
+  color: #fff;
+}
+
+.footer__top {
+  border-bottom: 1px solid #333333;
+}
+
+.footer__bottom {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__bottom__left {
+  float: left;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer__list {
+  float: left;
+  list-style: none;
+  width: 20%;
+  padding: 35px 0px 10px 10px;
+}
+
+.footer__list__header {
+  font-family: "Nike TG";
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.footer__list__item {
+  margin-bottom: 8px;
+}
+
+.footer__list__item__link {
+  color: #676767;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.footer__list__item__link:hover {
+  color: #fff;
+}
+
+.footer__social {
+  float: right;
+  margin-top: 35px;
+  margin-right: 20px;
+}
+
+.footer__social__link {
+  border-radius: 50%;
+  padding: 16px;
+  float: left;
+  text-decoration: none;
+  text-align: center;
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+  background-color: #7e7e7e;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.footer__social__link:hover {
+  background-color: #fff;
+}
+
+.footer__social__icon {
+  fill: #111111;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer .location {
+  float: left;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.footer .location__pin {
+  width: 15px;
+  height: 15px;
+  fill: #fff;
+  margin-right: 10px;
+}
+
+.footer .location__pin__link {
+  text-decoration: none;
+}
+
+.footer .location__name {
+  font-size: 10px;
+  color: #fff;
+}
+
+.footer .location__name__link {
+  text-decoration: none;
+}
+
+.footer .copyright {
+  float: left;
+}
+
+.footer .copyright__text {
+  font-size: 10px;
+  color: #676767;
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer__nav__list {
+  list-style-type: none;
+}
+
+.footer__nav__list__item {
+  padding: 8px 0;
+  float: left;
+  margin-left: 30px;
+}
+
+.footer__nav__list__item--tab {
+  position: relative;
+}
+
+.footer__nav__list__item--tab:hover > .guide {
+  opacity: 1;
+  z-index: 2;
+}
+
+.footer__nav__list__item--tab:hover {
+  border-top: 2px solid #fff;
+  margin-top: -2px;
+}
+
+.footer__nav__list__item__link {
+  text-decoration: none;
+  font-size: 10px;
+  color: #676767;
+}
+
+.footer__nav__list__item__link:hover {
+  color: #fff;
+}
+
+.footer .guide {
+  position: absolute;
+  top: -141.5px;
+  left: -180px;
+  z-index: -1;
+  background-color: #111111;
+  opacity: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid #fff;
+  padding: 15px 25px;
+  min-width: 500px;
+}
+
+.footer .guide__list {
+  list-style: none;
+  width: 30%;
+}
+
+.footer .guide__list__item {
+  margin: 2.5px 0;
+}
+
+.footer .guide__list__item__link {
+  text-decoration: none;
+  font-size: 12px;
+  color: #676767;
+}
+
+.footer .guide__list__item__link:hover {
+  color: #fff;
+}
+
+.product-carousel {
+  margin-bottom: 90px;
+  position: relative;
+}
+
+.product-carousel .carousel {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scrollbar-color: #222222 #f5f5f5;
+  scrollbar-width: thin;
+  transition: all 0.1s;
+}
+
+.product-carousel .products {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+  transition: all 0.3s;
+  width: 300%;
+}
+
+.product-carousel .products__card {
+  height: 60vh;
+  width: 300px;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.product-carousel .products__card__image {
+  height: 82%;
+  width: 100%;
+}
+
+.product-carousel .products__card__image__pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-carousel .products__card__info {
+  margin-top: 15px;
+  color: #000;
+}
+
+.product-carousel .products__card__info__name {
+  font-size: 16px;
+  font-weight: 300;
+  float: left;
+}
+
+.product-carousel .products__card__info__price {
+  font-size: 16px;
+  font-weight: 300;
+  float: right;
+  margin-right: 20px;
+}
+
+.product-carousel .products__card__info__category {
+  margin-top: 5px;
+  color: #757575;
+}
+
+.arrow {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+}
+
+.arrow__link {
+  border-radius: 50%;
+  padding: 16px;
+  float: left;
+  text-decoration: none;
+  text-align: center;
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+  transition: all 0.2s;
+  background-color: rgba(211, 211, 211, 0.521);
+  position: relative;
+}
+
+.arrow__link:active {
+  background-color: rgba(241, 241, 241, 0.921);
+}
+
+.arrow__icon {
+  fill: #111111;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.arrow--left {
+  top: 40%;
+  left: 1%;
+}
+
+.arrow--right {
+  top: 40%;
+  right: 1%;
+}
+
+.search {
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  position: absolute;
+  z-index: 200;
+  transition: all 0.3s;
+  top: 0;
+  right: 5%;
+  margin: 14px 5px 0 0;
+}
+
+.search__input {
+  background-color: #f1f1f1;
+  padding: 10px 30px 10px 15px;
+  border: none;
+  border-radius: 100px;
+  outline: none;
+  width: 60%;
+  margin-right: -30px;
+  transition: all 0.2s;
+}
+
+.search__input::placeholder {
+  color: #a3a3a3;
+  font-size: 15px;
+}
+
+.search__input:focus {
+  background-color: #eeeeee;
+  width: 100%;
+}
+
+.search__input:focus::placeholder {
+  color: #5c5c5c;
+}
+
+.search__input:focus ~ .search__button {
+  background-color: #eeeeee;
+}
+
+.search__button {
+  border: none;
+  transition: all 0.2s;
+}
+
+.search__button:active {
+  transform: translateY(3px);
+}
+
+.search__icon {
+  width: 15px;
+  height: 15px;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 120;
+  transition: all 0.2s;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+main {
+  position: relative;
+  z-index: 100;
+}
+
+header {
+  position: relative;
+  background-color: white;
+}
+
+header .container-nav {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header .container-nav .logo {
+  width: 65px;
+  margin: 16px 0;
+  display: block;
+  float: left;
+}
+
+header .container-nav .logo-nike {
+  width: 100%;
+}
+
+header .container-nav .nav {
+  float: left;
+  margin-left: 280px;
+  padding-bottom: 21px;
+  height: 20%;
+}
+
+header .container-nav .nav .menu-main__item {
+  display: inline-block;
+  padding: 0 0;
+  margin-top: 22px;
+}
+
+header .container-nav .nav .menu-main__item__link {
+  padding: 19px 12px;
+  color: #111;
+  text-decoration: none;
+}
+
+header .container-nav .nav .menu-main__item__link:hover + .menu-sub {
+  opacity: 1;
+  z-index: 150;
+  transform: translateY(0);
+}
+
+header .container-nav .nav .menu-main__item .menu-sub {
+  position: fixed;
+  opacity: 0;
+  z-index: -1;
+  top: 3.75em;
+  left: 0;
+  transform: translateY(-15px);
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  padding-top: 20px;
+  max-height: 89vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header .container-nav .nav .menu-main__item .menu-sub:hover {
+  z-index: 150;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+header .container-nav .nav .menu-main__item .menu-sub__section {
+  width: 14%;
+  margin: 10px;
+}
+
+header .container-nav .nav .menu-main__item .menu-sub__section__divison {
+  margin-bottom: 44px;
+}
+
+header .container-nav .nav .menu-main__item .menu-sub__section__divison__heading {
+  text-decoration: none;
+  color: #111;
+}
+
+header .container-nav .nav .menu-main__item .menu-sub__section__divison h3 {
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+header .container-nav .nav .menu-main__item .menu-sub__list {
+  list-style: none;
+}
+
+header .container-nav .nav .menu-main__item .menu-sub__list__item {
+  margin: 6px 0;
+}
+
+header .container-nav .nav .menu-main__item .menu-sub__list__item__link {
+  text-decoration: none;
+  color: #6d6d6d;
+  font-size: 14px;
+}
+
+header .container-nav .nav .menu-main__item .menu-sub__list__item__link:hover {
+  color: #000;
+}
+
+header .container-nav .nav:hover ~ .mega-menu-bg {
+  height: 89vh;
+}
+
+header .container-nav .mega-menu-bg {
+  background-color: #fff;
+  height: 0;
+  width: 100%;
+  transition: all 0.2s;
+  z-index: 140;
+}
+
+header .container-nav .mega-menu-bg:hover {
+  height: 89vh;
+}
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.menu-sub__mask {
+  position: fixed;
+  top: 4.65em;
+  left: 0;
+  transform: translateY(-15px);
+  z-index: 10;
+  min-height: 91vh;
+  color: transparent;
+  width: 100%;
+  top: 80.4px;
+  padding-top: 0px;
+  margin-top: -6px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.active {
+  border-bottom: 2px solid black;
+}
+
+.swiper {
+  width: 200%;
+  display: flex;
+  position: absolute;
+  top: 63px;
+  left: 0;
+  z-index: 15;
+  animation: swiper 15s linear infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.swiper .swiper-info {
+  background-color: #f5f5f5;
+  transform: translateX(0);
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 5px 0;
+}
+
+.swiper .swiper-info .heading {
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 3px;
+}
+
+.swiper .swiper-info .sub-heading {
+  font-size: 12px;
+  padding: 3px;
+}
+
+.swiper .swiper-info .sub-heading .link {
+  color: black;
+}
+
+.swiper .swiper-info .sub-heading .link--black {
+  color: black;
+}
+
+@keyframes swiper {
+  0% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  90% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 910px) {
+  header .container-nav .nav {
+    margin-left: 200px;
+  }
+}
+
+@media (max-width: 795px) {
+  header .container-nav .nav {
+    margin-left: 110px;
+  }
+  header .container-nav .nav .menu-main__item .menu-sub__section {
+    width: 16%;
+    margin: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
