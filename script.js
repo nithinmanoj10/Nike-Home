@@ -4,8 +4,6 @@ const menuSub = document.querySelectorAll(".menu-sub");
 const menuLinks = document.querySelectorAll(".menu-main__item__link");
 const container = document.querySelector(".container");
 
-// console.log(menuSub);
-// console.log(menuLinks);
 
 menuLinks.forEach(function (item) {
   item.addEventListener("mouseenter", function () {
@@ -73,3 +71,23 @@ miniMenu.addEventListener('mouseleave',function(){
   })
 })
 
+////////////////////////////////////////////////
+// CAROUSEL
+
+const carouselLeftArrow = document.getElementById("carouselLeftArrow");
+const carouselRightArrow = document.getElementById("carouselRightArrow");
+const carouselProductsCard = document.querySelector(".products__card");
+const carousel = document.querySelector(".carousel");
+
+carouselRightArrow.addEventListener("click",function(){
+  // carouselProducts.style.transform = "translateX(-400px)";
+  const cardWidth = carouselProductsCard.getBoundingClientRect().width;
+  carousel.scrollLeft += (cardWidth + 20);
+})
+
+// console.log(carouselLeftArrow);
+// console.log(carouselRightArrow);
+// console.log(carouselProducts);
+// console.log(carousel);
+
+console.log(carouselProductsCard.getBoundingClientRect().width);
