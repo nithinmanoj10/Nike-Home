@@ -8,14 +8,12 @@ const container = document.querySelector(".container");
 menuLinks.forEach(function (item) {
   item.addEventListener("mouseenter", function () {
     item.classList.add("active");
-    console.log(item);
   });
 });
 
 menuLinks.forEach(function (item) {
   item.addEventListener("mouseleave", function () {
     item.classList.remove("active");
-    console.log(item);
   });
 });
 
@@ -89,4 +87,27 @@ carouselLeftArrow.addEventListener("click",function(){
   carousel.scrollLeft -= (cardWidth + 20);
 })
 
+//////////////////////////////////////////
+// SEARCH BAR
 
+const searchBar = document.querySelector(".search__input");
+const searchBox = document.querySelector(".search");
+const overlay = document.querySelector(".overlay");
+
+searchBar.addEventListener("focus",function(){
+  overlay.style.display = "block";
+  searchBox.style.transform = "translateX(-200px)"
+  searchBox.style.width = "50%";
+})
+
+searchBar.addEventListener("focusout",function(){
+  overlay.style.display = "none";
+  searchBox.style.transform = "translateX(0)";
+  searchBox.style.width = "25%";
+})
+
+overlay.addEventListener("click",function(){
+  overlay.style.display = "none";
+  searchBox.style.transform = "translateX(0)";
+  searchBox.style.width = "25%";
+})

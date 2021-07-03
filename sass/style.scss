@@ -8,6 +8,7 @@
 @import "./Layout/productCarousel";
 @import "./Components/arrows";
 @import "./Components/searchBar";
+@import "./Components/overlay";
 
 *,
 *::before,
@@ -54,7 +55,7 @@ header {
 
     .nav {
       float: left;
-      margin-left: 300px;
+      margin-left: 280px;
       padding-bottom: 21px;
       height: 20%;
 
@@ -71,7 +72,7 @@ header {
 
             &:hover + .menu-sub {
               opacity: 1;
-              z-index: 11;
+              z-index: 150;
               transform: translateY(0);
             }
           }
@@ -96,7 +97,7 @@ header {
             justify-content: center;
 
             &:hover {
-              z-index: 11;
+              z-index: 150;
               opacity: 1;
               transform: translateY(0);
             }
@@ -149,6 +150,7 @@ header {
       height: 0;
       width: 100%;
       transition: all 0.2s;
+      z-index: 140;
 
       &:hover {
         height: 89vh;
