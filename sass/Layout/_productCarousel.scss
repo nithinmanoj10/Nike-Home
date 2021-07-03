@@ -1,17 +1,18 @@
 .product-carousel {
-  margin-bottom: 50px;
+  margin-bottom: 90px;
   position: relative;
   .carousel {
     margin-top: 30px;
     margin-bottom: 30px;
     overflow-x: scroll;
     scroll-behavior: smooth;
+    scrollbar-color: black;
     transition: all 0.1s;
   }
   .products {
     display: flex;
     flex-direction: row;
-
+    margin-bottom: 40px;
     transition: all 0.3s;
     // transform: translateX(-400px);
 
