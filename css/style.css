@@ -680,7 +680,7 @@
 
 .product-carousel .products__card {
   height: 60vh;
-  width: 70vh;
+  width: 300px;
   margin-right: 20px;
   text-decoration: none;
 }
@@ -833,12 +833,12 @@ header .container-nav .nav .menu-main__item .menu-sub {
   position: fixed;
   opacity: 0;
   z-index: -1;
-  top: 4.65em;
+  top: 3.75em;
   left: 0;
   transform: translateY(-15px);
   transition: all 0.3s ease-in-out;
   width: 100%;
-  padding-top: 0px;
+  padding-top: 20px;
   max-height: 89vh;
   overflow-y: auto;
   display: flex;
