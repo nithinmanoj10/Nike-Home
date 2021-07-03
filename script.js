@@ -93,21 +93,51 @@ carouselLeftArrow.addEventListener("click",function(){
 const searchBar = document.querySelector(".search__input");
 const searchBox = document.querySelector(".search");
 const overlay = document.querySelector(".overlay");
+const searchMenuBG = document.querySelector(".search__menu__bg");
+const searchResults = document.querySelector(".search__results");
 
-searchBar.addEventListener("focus",function(){
+const showSearch = function(){
   overlay.style.display = "block";
-  searchBox.style.transform = "translateX(-200px)"
+  searchBox.style.transform = "translateX(-260px)"
   searchBox.style.width = "50%";
+
+  searchMenuBG.style.minHeight = "40vh";
+
+  searchResults.style.opacity = "1";
+  searchResults.style.zIndex = "300";
+}
+
+const hideSearch = function(){
+  overlay.style.display = "none";
+  searchBox.style.transform = "translateX(0)";
+  searchBox.style.width = "25%";
+
+  searchBar.blur();
+
+  searchMenuBG.style.minHeight = "0vh";
+
+  searchResults.style.opacity = "0";
+  searchResults.style.zIndex = "-3";
+}
+
+// when clicked on the search bar
+searchBar.addEventListener("focus",function(){
+  showSearch();
 })
 
+// when clicked out of the search bar
 searchBar.addEventListener("focusout",function(){
-  overlay.style.display = "none";
-  searchBox.style.transform = "translateX(0)";
-  searchBox.style.width = "25%";
+  hideSearch();
 })
 
+// when clicked anywhere else
 overlay.addEventListener("click",function(){
-  overlay.style.display = "none";
-  searchBox.style.transform = "translateX(0)";
-  searchBox.style.width = "25%";
+  hideSearch();
+})
+
+// when scrolled
+document.addEventListener("scroll",function(){
+  searchMenuBG.style.opacity = "0";
+  hideSearch();
+  searchMenuBG.style.opacity = "1";
 })
