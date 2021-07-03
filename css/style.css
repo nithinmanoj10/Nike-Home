@@ -665,7 +665,8 @@
   margin-bottom: 30px;
   overflow-x: scroll;
   scroll-behavior: smooth;
-  scrollbar-color: black;
+  scrollbar-color: #222222 #f5f5f5;
+  scrollbar-width: thin;
   transition: all 0.1s;
 }
 
